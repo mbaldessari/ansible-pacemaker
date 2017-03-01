@@ -81,7 +81,7 @@ def check_resource_state(module, resource, state):
         states.append('master')
 
     for i in states:
-       if i in out.lower():
+       if i + ' ' in out.lower():
            return True
 
 def get_resource(module, resource):
